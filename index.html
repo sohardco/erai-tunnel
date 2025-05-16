@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Listen on Spotify</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'ВАШ_PIXEL_ID'); // 👈 ВСТАВ СВІЙ ID
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=ВАШ_PIXEL_ID&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background: #000;
+      color: #fff;
+      padding-top: 50px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #1DB954;
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #1ed760;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎧 Слухай наш трек на Spotify!</h1>
+  <a class="button" href="https://open.spotify.com/track/ВАШ_ТРЕК_ID" target="_blank">
+    Відкрити в Spotify
+  </a>
+
+</body>
+</html>
