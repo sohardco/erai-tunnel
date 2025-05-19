@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Listen on Spotify</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- Facebook Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', 'ВАШ_PIXEL_ID'); // 👈 ВСТАВ СВІЙ ID
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=ВАШ_PIXEL_ID&ev=PageView&noscript=1"
-  /></noscript>
+      src="https://www.facebook.com/tr?id=ВАШ_PIXEL_ID&ev=PageView&noscript=1" /></noscript>
   <!-- End Facebook Pixel Code -->
 
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      background: #000;
-      color: #fff;
-      padding-top: 50px;
-    }
-    a.button {
-      display: inline-block;
-      padding: 15px 30px;
-      background: #1DB954;
-      color: #fff;
-      text-decoration: none;
-      font-size: 20px;
-      border-radius: 30px;
-      transition: background 0.3s;
-    }
-    a.button:hover {
-      background: #1ed760;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
-<body>
 
-  <h1>🎧 Слухай наш трек на Spotify!</h1>
-  <a class="button" href="https://open.spotify.com/track/ВАШ_ТРЕК_ID" target="_blank">
-    Відкрити в Spotify
-  </a>
+<body>
+<img class="background-image" src="static/tunnel.png" alt="Spotify">
+  <img class="cover" src="static/tunnel.png" alt="Spotify">
+
+  <h2>🎧 ERAI x First to Die - Тунель</h1>
+  <p>Твій розум — це пастка. Ти або вирвешся, або згниєш у Тунелі. Переходь на улюблений стрімінг і занурся в
+    атмосферу!</h3>
+  <ul>
+    <li>
+      <div>
+        <a class="button" href="https://open.spotify.com/track/3E2zbrR4dF9ONkVfSHAGxG " target="_blank">
+          <img class="service" src="static/Spotify_icon.svg" alt="Spotify">
+          <span class="platform">Spotify</span>
+          <span class="open">Відкрити</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <div>
+        <a class="button" href="https://music.youtube.com/watch?v=DwU0CM4ami8&si=vWxQLC3KePaNjfov" target="_blank">
+          <img class="service" src="static/Youtube_Music_icon.svg" alt="YouTube Music">
+          <span class="platform">YouTube Music</span>
+          <span class="open">Відкрити</span>
+        </a>
+      </div>
+    </li>
+    <li>
+      <div>
+        <a class="button" href="https://music.apple.com/ua/song/%D1%82%D1%83%D0%BD%D0%B5%D0%BB%D1%8C/1802223189"
+          target="_blank">
+          <img class="service" src="static/Apple_Music_icon.svg" alt="Apple Music">
+          <span class="platform">Аpple Music</span>
+          <span class="open">Відкрити</span>
+        </a>
+      </div>
+    </li>
+  </ul>
+
 
 </body>
+
 </html>
